@@ -1,0 +1,14 @@
+package com.uni.dao;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class EmployeeDao {
+	
+	public void saveEmployee() {
+		System.out.println("object is saved to db");
+		throw new RuntimeException("Dummy Exception");
+	}
+	
+
+}

@@ -1,0 +1,9 @@
+package com.uni.models;
+
+import lombok.Data;
+
+@
+@Data
+public class CustomerData {
+
+}

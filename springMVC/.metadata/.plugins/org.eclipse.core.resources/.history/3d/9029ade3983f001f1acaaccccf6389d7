@@ -1,0 +1,2 @@
+spring.application.name=SpringRESTAPP
+server.port=9090;

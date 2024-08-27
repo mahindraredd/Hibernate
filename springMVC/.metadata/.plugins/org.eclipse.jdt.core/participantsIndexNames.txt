@@ -1,0 +1,23 @@
+INDEX VERSION 1.134
+C:\springMVC\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2812600763.index
+\CRMproject\src\main\java
+C:\springMVC\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\356024621.index
+\BootMVCProj8-MVC-CRM-CRUDAPP-JSP\src\main\java
+C:\springMVC\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2838105620.index
+\CRMwepAPP\src\main\java
+C:\springMVC\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\141717938.index
+\SpringBootMVC5-SpringTagLibrary\src\main\java
+C:\springMVC\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2230449426.index
+\CustomerRelationalManagerAPP\src\main\java
+C:\springMVC\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4227917122.index
+\CRM\src\main\java
+C:\springMVC\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3822273515.index
+\BootMVCProj8-MVC-CRM-CRUDAPP-JSP\src\main\java
+C:\springMVC\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3978611867.index
+\SpringBootMVC-DataBinding\src\main\java
+C:\springMVC\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1906928277.index
+\CRMwepAPP\src\main\java
+C:\springMVC\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1449168076.index
+\SpringBootMVC-DataDendering\src\main\java
+C:\springMVC\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2401187114.index
+\SpringBootMVC1\src\main\java

@@ -1,0 +1,8 @@
+package com.uni.service;
+
+import com.uni.models.Tourist;
+
+public interface ITicketService {
+	public String registerTourist(Tourist tourist);
+
+}

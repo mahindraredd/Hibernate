@@ -1,0 +1,13 @@
+package com.uni.model;
+
+import lombok.Data;
+import lombok.RequiredArgsConstructor;
+
+@Data
+@RequiredArgsConstructor
+public class Address {
+	private String city;
+	private String town;
+	private String home;
+
+}

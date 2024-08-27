@@ -1,0 +1,32 @@
+package com.uni.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.uni.dao.ITouristRepo;
+import com.uni.models.Tourist;
+
+@Service
+public class TicketServiceImpl implements ITicketService {
+	
+	@Autowired
+	private ITouristRepo repo;
+	
+	@Override
+	public String registerTourist(Tourist tourist) {
+		// TODO Auto-generated method stub
+		Tourist msg=repo.save(tourist);
+		return  ""+msg.getId();
+	}
+
+	@Override
+	public List<Tourist> getAll() {
+	 List<Tourist> list = (List<Tourist>) repo.findAll();
+	 list.sort((t1,t2)->t1.getBudget().compareTo(t2.getBudget()));
+	 
+		return list;
+	}
+
+}

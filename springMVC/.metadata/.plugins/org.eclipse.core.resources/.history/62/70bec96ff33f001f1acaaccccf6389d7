@@ -1,0 +1,23 @@
+package JSon2Rest.Json2WebAPp;
+
+import java.io.File;
+
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.JsonMappingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.uni.model.Fruits;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args ) throws JsonMappingException, JsonProcessingException
+    {
+        
+        		ObjectMapper map=new ObjectMapper();
+        		Fruits fruit=map.readValue("data/sample1.json",Fruits.class);
+        		
+    }
+}

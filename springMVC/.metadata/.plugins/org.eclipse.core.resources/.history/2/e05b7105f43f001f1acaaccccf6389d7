@@ -1,0 +1,14 @@
+package com.uni.model;
+
+import lombok.Data;
+
+@Data
+public class Fruits {
+//	fruit" : "Apple",
+//	"size" : "Large",
+//	"color" : "Red"
+	private String fruit;
+	private String size;
+	private String color;
+
+}

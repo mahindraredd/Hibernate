@@ -1,0 +1,18 @@
+package JSon2Rest.Json2WebAPp;
+
+import java.io.File;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.uni.model.Fruits;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+        ObjectMapper mapper=new ObjectMapper(new File("/Json2WebAPp/data/sample1.json"),Fruits.class)
+    }
+}

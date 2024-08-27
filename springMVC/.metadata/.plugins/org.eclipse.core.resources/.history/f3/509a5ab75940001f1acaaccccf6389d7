@@ -1,0 +1,17 @@
+package com.uni.controller;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.uni.models.Tourist;
+
+@RestController
+@RequestMapping("api/tourist")
+public class TouristController {
+	public ResponseEntity<String> registerTourist(Tourist tourist){
+		
+		return null;
+	}
+
+}

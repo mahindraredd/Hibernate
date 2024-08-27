@@ -1,0 +1,14 @@
+package com.uni.runners;
+
+import org.springframework.boot.CommandLineRunner;
+
+public class myRunner implements CommandLineRunner {
+
+	@Override
+	public void run(String... args) throws Exception {
+		// TODO Auto-generated method stub
+		System.out.println(args[0]);
+
+	}
+
+}

@@ -1,0 +1,42 @@
+package JSon2Rest.Json2WebAPp;
+
+import java.io.File;
+import java.io.IOException;
+
+import com.fasterxml.jackson.core.exc.StreamReadException;
+import com.fasterxml.jackson.databind.DatabindException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.uni.model.Address;
+import com.uni.model.Fruits;
+import com.uni.model.Product;
+
+/**
+ * Hello world!
+ *
+ */
+
+public class App 
+{
+	public static Product getProductDetails(Product product){
+		
+		product.setPname("universein");
+		product.setAddress(new Address("Nrt","narasaropet","Barampet"));
+		
+		return product;
+		
+	}
+    public static void main( String[] args ) throws IOException
+    {
+        
+        		ObjectMapper map=new ObjectMapper();
+        		Product product=new Product();
+        		product=getProductDetails(product);
+        		System.out.println("JAva format"+ product);
+        		String jsonData=map.writeValueAsString(product);
+        		System.out.println("In json format "+jsonData);
+        		map.writeValue(new File("product.json"), jsonData);
+        		
+        		        		
+        		
+    }
+}

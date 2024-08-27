@@ -1,0 +1,5 @@
+package com.uni.models;
+
+public class Ticket {
+
+}

@@ -1,0 +1,5 @@
+package com.uni.configurations;
+
+public class SwaggerDocConfig {
+
+}
