@@ -1,0 +1,11 @@
+package com.uni.types;
+
+import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
+
+@Setter
+@Getter
+public @Data class Customer {
+private String name;
+}

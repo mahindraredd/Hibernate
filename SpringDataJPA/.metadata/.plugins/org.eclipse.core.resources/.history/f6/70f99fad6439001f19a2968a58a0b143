@@ -1,0 +1,16 @@
+package com.uni.service;
+
+import org.hibernate.annotations.SecondaryRow;
+import org.springframework.stereotype.Service;
+
+import com.uni.bo.CaronaVaccine;
+@Service
+public class CaronaServiceImpl implements ICaronaService {
+
+	@Override
+	public void registerVaccine(CaronaVaccine v) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,16 @@
+package com.uni.types;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.Getter;
+import lombok.NonNull;
+import lombok.Setter;
+
+@Setter
+@Getter
+@AllArgsConstructor
+public  class Customer {
+private String name;
+private String address;
+private Integer age;
+}

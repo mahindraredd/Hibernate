@@ -1,0 +1,8 @@
+package com.uni.service;
+
+import com.uni.bo.CaronaVaccine;
+
+public interface ICaronaService {
+	public void registerVaccine(CaronaVaccine v);
+
+}

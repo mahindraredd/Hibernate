@@ -1,0 +1,20 @@
+package com.uni.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.uni.bo.CaronaVaccine;
+import com.uni.dao.CaronoVaccineRepo;
+@Service
+public class CaronaServiceImpl implements ICaronaService {
+	
+	@Autowired
+	private CaronoVaccineRepo dao;
+	
+	@Override
+	public String registerVaccine(CaronaVaccine v) {
+		dao.save(null)
+		return null;
+	}
+
+}

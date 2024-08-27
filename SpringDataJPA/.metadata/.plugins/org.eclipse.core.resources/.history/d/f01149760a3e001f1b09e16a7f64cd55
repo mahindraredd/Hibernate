@@ -1,0 +1,13 @@
+package com.uni.service;
+
+import com.uni.customerDTO.CustomerDTO;
+
+public class CustomerServiceImpl implements ICustomerService {
+
+	@Override
+	public String registerCutomer(CustomerDTO dto) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

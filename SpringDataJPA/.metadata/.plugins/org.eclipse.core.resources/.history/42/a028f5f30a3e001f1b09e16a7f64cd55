@@ -1,0 +1,17 @@
+package com.uni.service;
+
+import org.springframework.stereotype.Service;
+
+import com.uni.customerDTO.CustomerDTO;
+import com.uni.repository.ICustomerRepo;
+@Service
+public class CustomerServiceImpl implements ICustomerService {
+	
+	private ICustomerRepo repo;
+	@Override
+	public String registerCutomer(CustomerDTO dto) {
+		System.out.println("proxy class is "+repo.getClass().getName());
+		return null;
+	}
+
+}

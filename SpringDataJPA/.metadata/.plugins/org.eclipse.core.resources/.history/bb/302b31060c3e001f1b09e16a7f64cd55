@@ -1,0 +1,17 @@
+package com.uni.customerDTO;
+
+import lombok.Data;
+import lombok.NonNull;
+
+@Data
+public class CustomerDTO {
+	@org.springframework.data.annotation.Id
+	private Long Id;
+	@NonNull
+	private String name;
+	@NonNull
+	private String address;
+	@NonNull
+	private Integer age;
+
+}

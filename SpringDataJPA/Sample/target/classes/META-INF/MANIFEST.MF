@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Built-By: rajas
+Build-Jdk: 21.0.1
+Class-Path: .
+Created-By: Maven Integration for Eclipse
+

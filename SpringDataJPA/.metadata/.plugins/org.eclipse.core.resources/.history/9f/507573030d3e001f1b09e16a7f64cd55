@@ -1,0 +1,4 @@
+spring.application.name=springMongoDB
+spring.data.mongodb=fsDB
+spring.data.mongodb=27017
+spring.data.mongodb=localhost

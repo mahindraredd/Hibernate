@@ -1,0 +1,9 @@
+package com.uni.service;
+
+import com.uni.customerDTO.CustomerDTO;
+
+public interface ICustomerService {
+	public String registerCutomer(CustomerDTO dto);
+	public Iterable<CustomerDTO> findCustomer(String name);
+
+}

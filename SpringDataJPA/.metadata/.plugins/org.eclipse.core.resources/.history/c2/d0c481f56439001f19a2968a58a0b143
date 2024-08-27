@@ -1,0 +1,87 @@
+package com.uni.service;
+
+import java.util.Optional;
+
+import com.uni.bo.CaronaVaccine;
+
+public class CaronaServiceImpl implements ICaronaService {
+
+	@Override
+	public <S extends CaronaVaccine> S save(S entity) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public <S extends CaronaVaccine> Iterable<S> saveAll(Iterable<S> entities) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Optional<CaronaVaccine> findById(Long id) {
+		// TODO Auto-generated method stub
+		return Optional.empty();
+	}
+
+	@Override
+	public boolean existsById(Long id) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public Iterable<CaronaVaccine> findAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Iterable<CaronaVaccine> findAllById(Iterable<Long> ids) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public long count() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public void deleteById(Long id) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void delete(CaronaVaccine entity) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void deleteAllById(Iterable<? extends Long> ids) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void deleteAll(Iterable<? extends CaronaVaccine> entities) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void deleteAll() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void registerVaccine(CaronaVaccine v) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

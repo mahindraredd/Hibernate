@@ -1,0 +1,10 @@
+package com.uni.service;
+
+import org.springframework.data.repository.CrudRepository;
+
+import com.uni.bo.CaronaVaccine;
+
+public interface ICaronaService  {
+	
+
+}

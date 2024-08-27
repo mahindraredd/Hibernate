@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Built-By: rajas
+Build-Jdk: 21.0.1
+Implementation-Title: TestApp
+Implementation-Version: 1
+Implementation-Vendor-Id: universeIn
+Implementation-URL: http://www.example.com
+Created-By: Maven Integration for Eclipse
+

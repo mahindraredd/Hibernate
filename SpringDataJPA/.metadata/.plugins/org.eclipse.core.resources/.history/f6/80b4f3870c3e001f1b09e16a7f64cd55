@@ -1,0 +1,9 @@
+package com.uni.repository;
+
+import org.springframework.data.mongodb.repository.MongoRepository;
+
+import com.uni.document.Customer;
+
+public interface ICustomerRepo extends MongoRepository<Customer, Long> {
+
+}

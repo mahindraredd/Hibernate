@@ -1,0 +1,4 @@
+spring.application.name=springMVC
+server.port=9092
+spring.mv.view.prefix=/WEB-INF/pages
+spring.mvc.view.suffix=.jsp

@@ -1,0 +1,6 @@
+INDEX VERSION 1.4+C:\SpringDataJPA\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3612873267.index
+2238499324.index
+2320829789.index
+101929011.index
+845794910.index

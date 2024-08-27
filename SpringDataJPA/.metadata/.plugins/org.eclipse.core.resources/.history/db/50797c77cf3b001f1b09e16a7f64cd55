@@ -1,0 +1,45 @@
+package com.uni;
+
+import java.util.Scanner;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+
+{
+	public void sayHello(String name) {
+		System.out.println("say hello()");
+		for(int i=1;i<=1;i++) {
+			System.out.println(name+" ");
+		}
+		System.out.println("End of sayHello()");
+		Scanner scan=new Scanner(System.in);
+		System.out.println("Enter the message you want to display");
+		String msg=scan.next();
+		display(msg);
+		
+	}
+	
+    private void display(String msg) {
+		System.out.println("Display the message user entered "+msg);
+		printNumber(10);
+		
+	}
+
+	private void printNumber(int i) {
+		System.out.println("printing the number which is given by display method "+i);
+		
+	}
+
+	public static void main( String[] args )
+    {
+		App app=new App();
+        System.out.println( "Hello World!" );
+        app.sayHello("mahindra");
+        app.display("you dumb fuck");
+        app.printNumber(11);
+        
+    }
+}

@@ -1,0 +1,5 @@
+package com.uni.types;
+
+public class Customer {
+
+}

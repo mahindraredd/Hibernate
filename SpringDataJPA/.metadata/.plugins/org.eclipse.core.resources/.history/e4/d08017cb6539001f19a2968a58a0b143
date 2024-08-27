@@ -1,0 +1,16 @@
+package com.uni.service;
+
+import org.springframework.stereotype.Service;
+
+import com.uni.bo.CaronaVaccine;
+@Service
+public class CaronaServiceImpl implements ICaronaService {
+
+	private 
+	@Override
+	public String registerVaccine(CaronaVaccine v) {
+		
+		return null;
+	}
+
+}
