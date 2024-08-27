@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    <bean id="dtdc" class="com.comp.DTDC"></bean>
+    <bean id="target" class="com.comp.Flipkart">
+    <constructor-arg name="courier" ref="dtdc"></constructor-arg>
+    <property name="discount" value="25"></property>
+    <property name="amount" value="30"></property>
+    </bean>
+
+</beans>

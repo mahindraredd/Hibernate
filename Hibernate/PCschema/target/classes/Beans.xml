@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- Context namespace: enabling component scanning -->
+    <context:annotation-config/>
+    <!-- bean definitions here -->
+    <bean id="dtdc" class="com.comp.DTDC" autowire-candidate="false"></bean>
+    <bean id="dBart" clas s="com.comp.BLUEDART" ></bean>
+    
+    
+    <bean id="target" class="com.comp.Department" c:course="cse" c:classes="4" c:hod="veeraya">
+    	
+    
+    </bean>
+
+</beans>

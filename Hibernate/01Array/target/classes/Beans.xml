@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    
+    <bean id="wmg" class="com.comp.WishMessageGenerator">
+    <property name="marks" >
+    <array>
+    <value>100</value>
+    <value>97</value>
+    <value>19</value>
+    <value>10</value>
+    </array>
+    </property>
+    </bean>
+    <bean id="sysDate" class="java.util.Date"></bean>
+    <bean id="dob" class="java.util.Date">
+    	<property name="year" value="99"/>
+    	<property name="month" value="7"/>
+    	<property name="date" value="10"/>
+    	
+    	
+    </bean>
+    <bean id="std" class="com.comp.Student">
+	    <property name="names">
+		    	<list>
+		    		<value>Mahi</value>
+		    		<value>REddy</value>
+		    		<value>bommu</value>
+		    		<value>Venkata</value>
+		    	</list>
+	    </property>
+    	<property name="dob">
+    		<list>
+    			<ref bean="sysDate"/>
+    			<ref bean="dob"/>
+    		</list>
+    	</property>
+    	<property name="phonenumber">
+    		<set>
+    			<ref bean="sysDate"/>
+    		</set>
+    	</property>
+    </bean>
+
+</beans>

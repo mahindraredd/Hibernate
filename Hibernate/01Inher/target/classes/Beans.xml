@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    
+    <bean id="first" class="com.comp.WishMessageGenerator" abstract="true">
+    	<constructor-arg name="courses">
+    		<set>
+    			<value>c</value>
+    			<value>chemistry</value>
+    			<value>physics</value>
+    		
+    		</set>
+    	</constructor-arg>
+    </bean>
+    <bean id="second" class="com.comp.WishMessageGenerator" parent="first">
+    	<constructor-arg name="courses">
+    		<set merge="true">
+    			<value>ds</value>
+    			<value>db</value>
+    			<value>dms </value>
+    		
+    		</set>
+    	</constructor-arg>
+    </bean>
+    
+    
+    
+    
+    
+    
+    
+    <bean id="sysDate" class="java.util.Date"></bean>
+    <bean id="dob" class="java.util.Date">
+    	<property name="year" value="99"/>
+    	<property name="month" value="7"/>
+    	<property name="date" value="10"/>
+    	
+    	
+    </bean>
+    <bean id="std" class="com.comp.Student">
+	    <property name="names">
+		    	<list>
+		    		<value>Mahi</value>
+		    		<value>REddy</value>
+		    		<value>bommu</value>
+		    		<value>Venkata</value>
+		    	</list>
+	    </property>
+    	<property name="dob">
+    		<list>
+    			<ref bean="sysDate"/>
+    			<ref bean="dob"/>
+    		</list>
+    	</property>
+    </bean>
+
+</beans>

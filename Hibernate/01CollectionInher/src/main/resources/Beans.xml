@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    
+    <bean id="wmg" class="com.comp.WishMessageGenerator" abstract="true">
+    	<constructor-arg name="name" value="mahindra"/>
+    	<constructor-arg name="mothername" value="lakshmi"/>
+    	<constructor-arg name="fathername" value="Chenchi reddy"/>
+    </bean>
+    <bean id="work" class="com.comp.WishMessageGenerator" parent="wmg">
+    	<constructor-arg name="school" value="scs"/>
+    	<constructor-arg name="college" value="bjs"/>
+    	<constructor-arg name="masterCollege" value="trent"/>
+    	<constructor-arg name="job1" value="sei"/>
+    	<constructor-arg name="job2" value="groccers"/>
+    	<constructor-arg name="job3" value="sales"/>
+    	
+    </bean>
+    
+    
+    
+    <bean id="sysDate" class="java.util.Date"></bean>
+    <bean id="dob" class="java.util.Date">
+    	<property name="year" value="99"/>
+    	<property name="month" value="7"/>
+    	<property name="date" value="10"/>
+    	
+    	
+    </bean>
+    <bean id="std" class="com.comp.Student">
+	    <property name="names">
+		    	<list>
+		    		<value>Mahi</value>
+		    		<value>REddy</value>
+		    		<value>bommu</value>
+		    		<value>Venkata</value>
+		    	</list>
+	    </property>
+    	<property name="dob">
+    		<list>
+    			<ref bean="sysDate"/>
+    			<ref bean="dob"/>
+    		</list>
+    	</property>
+    </bean>
+
+</beans>
